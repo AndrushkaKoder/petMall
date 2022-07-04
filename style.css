@@ -797,7 +797,32 @@ left: 9px;
 
 }
 
-.mobileWidth{
+/* .mobileWidth{
     width: 100%;
     margin: 30px 0;
+} */
+
+
+.nav_menu_mobile{
+
+    width: 50%;
+    height: 0;
+    overflow: hidden;
+    background: white;
+    position: absolute;
+    top: 0;
+   left: 200px;
+   z-index: 20;
+   transition: .3s ease all;
 }
+
+.item_mobile{
+    width: 100%;
+    text-align: center;
+}
+
+.open_burger{
+    height: 50vh;
+    
+}
+

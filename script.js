@@ -67,6 +67,23 @@ window.addEventListener("scroll", function(e){
     }
     }
 )
+
+
+let burger = document.querySelector(".burger_btn")
+let cross = document.querySelector(".cross")
+let menu_mobile = document.querySelector(".nav_menu_mobile")
+
+burger.addEventListener("click", function(e){
+    if(e.target == this){
+        menu_mobile.classList.add("open_burger")
+    }
+})
+
+cross.addEventListener("click", function(e){
+    if(e.target == this){
+        menu_mobile.classList.remove("open_burger")
+    }
+})
    
- 
+
 
