@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Montserrat&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <title>Petmall</title>
+</head>
+<body>
+
+    <!-- header for mobile -->
+    <nav class="navbar navbar-light bg-light nav_mini">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-3">
+              <div class="logo_mini">
+                <a href="#"><img src="img/logo-pet_200x.jpg" alt="" width="100%"></a>
+              </div>
+            </div>
+            <div class="col-9 d-flex justify-content-end">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+       <!-- header for mobile -->  
+
+
+      <!-- header for sticky -->
+      <div class="header_light">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 d-flex justify-content-start">
+              <div class="logo">
+               <a href="#"><img src="img/logo-pet_200x.jpg" alt="#"></a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="navBar">
+
+                <ul class="nav nav-tabs d-flex justify-content-center">
+
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="first_btn">Home</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Homepage 1</a></li>
+                          <li><a href="#">Homepage 2</a></li>
+                        </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.zookaluga.ru/">shop</a>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blogs</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dogs</a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-end mini_header_search">
+              <div class="header_content d-flex justify-content-end bucket">
+                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"> <i class="fa-solid fa-bag-shopping"></i></a>
+                 <a href="#"><i class="fa-solid fa-gear"></i></a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- header for sticky -->
+
+
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 header_content d-flex justify-content-start">
+                  <ul>
+                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li> <a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li></li><a href="#"><i class="fa-solid fa-envelope"></i></a><li>
+                  </ul>
+                </div>
+
+                <div class="col-lg-6 header_logo d-flex justify-content-center">
+                    <a href="#"><img src="img/logo-pet_200x.jpg" alt="#"></a>
+                </div>
+
+                <div class="col-lg-3 header_content d-flex justify-content-end bucket">
+                   <a href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                   <a href="#"> <i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="#"><i class="fa-solid fa-gear"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="navigation">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                  
+                    <ul class="nav nav-tabs d-flex justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="first_btn">Home</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Homepage 1</a></li>
+                                <li><a href="#">Homepage 2</a></li>
+                              </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.zookaluga.ru/">shop</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Blogs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                              </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dogs</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                              </ul>
+                        </li>
+                        
+                    
+                      </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_swiper">
+
+      <!-- <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12"> -->
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide first_slide">
+                  <div class="swiper_content">
+                    <p id="text1">Feature</p>
+                    <p id = "text2">Get your essentials <br>
+                    delivered free today</p>
+                  </div>
+                </div>
+                <div class="swiper-slide double_slide">
+                  <div class="swiper_content custom_anim2">
+                    <p id="text1">Feature</p>
+                    <p id = "text2">Get your essentials <br>
+                    delivered free today</p>
+                  </div>
+                </div>
+                <div class="swiper-slide thrid_slide">
+                  <div class="swiper_content custom_anim3">
+                    <p id="text1">Feature</p>
+                    <p id = "text2">Get your essentials <br>
+                    delivered free today</p>
+                  </div>
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+          <!-- </div>
+        </div>
+      </div> -->
+
+    </section>
+
+
+
+    <section class="shopyfy_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-between">
+
+            <div class="rollBox">
+              <div class="rollBox_img">
+                <img src="img/img-1_200x.jpg" alt="#">
+              </div>
+              <a href="#">Hip & Joint </a>
+            </div>
+            <div class="rollBox">
+              <div class="rollBox_img">
+                <img src="img/img2.jpg" alt="#">
+              </div>
+              <a href="#">Allergy, Skin, Coat </a>
+            </div>
+            <div class="rollBox">
+              <div class="rollBox_img">
+                <img src="img/img-3_200x.jpg" alt="#">
+              </div>
+              <a href="#">Nutrition Boost</a>
+            </div>
+            <div class="rollBox">
+              <div class="rollBox_img">
+                <img src="img/img-4_200x.jpg" alt="#">
+              </div>
+              <a href="#">Bully Sticks</a>
+            </div>
+            <div class="rollBox">
+              <div class="rollBox_img">
+                <img src="img/img-5_200x.jpg" alt="#">
+              </div>
+              <a href="#">Senior Care </a>
+            </div>
+            <div class="rollBox">
+              <div class="rollBox_img">
+                <img src="img/img-6_200x.jpg" alt="#">
+              </div>
+              <a href="#">Dental Collection </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+
+    <section class="shopNow">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-between">
+
+            <div class="shopNow_img">
+              <img src="img/img-7_900x.jpg" alt="#">
+            </div>
+            <div class="shopNow_text">
+              <h3>Advanced Hip & Joint Soft <br>
+               Chews</h3>
+               <p>Happy, Healthy Advanced Hip & Joint soft chews for dogs provide <br>
+                 natural relief from joint distress for improved flexibility ....</p>
+                 <a href="#" class="button_buy">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-between">
+
+            <div class="shopNow_text">
+            <h3>Plaque & Tartar Control</h3>
+               <p>Happy, Healthy Advanced Hip & Joint soft chews for dogs provide <br>
+                 natural relief from joint distress for improved flexibility ....</p>
+                 <a href="#" class="button_buy">Shop Now</a>
+            </div>
+
+            <div class="shopNow_img">
+              <img src="img/img-8_900x.jpg" alt="#">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+
+
+
+      <!-- best selling -->
+    <section class="bestSelling">
+
+      <div class="container">
+        <h2 class="bs">Best selling</h2>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+           <ul class="d-flex">
+            <li> <a href="https://petobzor.com" class="Dogs category_item active_dog_category active_now" >Dogs</a></li>
+            <li> <a href="" class="Dogs category_item active_cat_category">Cats</a></li>
+            <li> <a href="" class="Dogs category_item active_acs_category">Accesires</a></li>
+           </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- ТУТ ДОЛЖЕН БЫТЬ СЛАЙДЕР -->
+      <div class="dog_categry">
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-between">
+              <a href="#">
+                <div class="product_card">
+                  <div class="product_img one"></div>
+                  <p>Docas Chew Wraps</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img two"></div>
+                  <p>Wet Dog Food</p>
+                  <span id="price">$27.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img three"></div>
+                  <p>Bone Dog Toy</p>
+                  <span id="price">$54.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one"></div>
+                  <p>Wilderness Dry Dog Food</p>
+                  <span id="price">$25.00</span>
+                </div>
+               </a> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+      <div class="cat_categry">
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-between">
+              <a href="#">
+                <div class="product_card">
+                  <div class="product_img one kitty"></div>
+                  <p>Whiskas</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one kitty"></div>
+                  <p>Whiskas</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one kitty"></div>
+                  <p>Whiskas</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one kitty"></div>
+                  <p>Whiskas</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="acs_categry">
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-between">
+              <a href="#">
+                <div class="product_card">
+                  <div class="product_img one acsessoires"></div>
+                  <p>Docas Chew Wraps</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one acsessoires"></div>
+                  <p>Docas Chew Wraps</p>
+                  <span id="price">$20.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one acsessoires"></div>
+                  <p>Docas Chew Wraps</p>
+                  <span id="price">10.00</span>
+                </div>
+               </a> 
+               <a href="#">
+                <div class="product_card">
+                  <div class="product_img one acsessoires"></div>
+                  <p>Docas Chew Wraps</p>
+                  <span id="price">$25.00</span>
+                </div>
+               </a> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+
+    </section>
+
+
+
+    <section class="senior_care">
+      <!-- <div class="container_fluid">
+        <div class="row">
+          <div class="col-lg-12"> -->
+
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="senior_slide">
+                    <div class="senior_img">
+                      <img src="img/img-10_955x700@2x.jpg" alt="#">
+                    </div>
+                    <div class="senior_text">
+                      <h3 id="senior_title">Complete Senior Care</h3>
+                      <p  id="senior_content">Vehicula vehicula, occaecati nullam excepteur magnam culpa <br>
+                       sit, placerat ligula pede earum reprehenderit.</p>
+                       <a href="#" class="button_buy">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="senior_slide">
+                    <div class="senior_img">
+                      <img src="img/img-18_955x700@2x.jpg" alt="#">
+                    </div>
+                    <div class="senior_text">
+                      <h3 id="senior_title">Rescuers Thank You for <br> Helping Get Hoarded Dogs Healthy!</h3>
+                      <p  id="senior_content">Vehicula vehicula, occaecati nullam excepteur magnam culpa <br>
+                       sit, placerat ligula pede earum reprehenderit.</p>
+                       <a href="#" class="button_buy">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="senior_slide">
+                    <div class="senior_img">
+                      <img src="img/slide_img.jpg" alt="#">
+                    </div>
+                    <div class="senior_text">
+                      <h3 id="senior_title">How Long Will Your Dogs <br> Live ? Answer May Shock You</h3>
+                      <p id="senior_content">Vehicula vehicula, occaecati nullam excepteur magnam culpa <br>
+                       sit, placerat ligula pede earum reprehenderit.</p>
+                       <a href="#" class="button_buy">Shop Now</a>
+
+                    </div>
+                  </div>
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev button_senior_prew"></div>
+              <div class="swiper-button-next button_senior_next"></div>
+            
+              <!-- If we need scrollbar -->
+              <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+          <!-- </div>
+        </div>
+      </div> -->
+    </section>
+
+
+
+    <section class="latest_news">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 latest_title">
+            <h2 id="senior_title">Latest News</h2>
+            <p>Nonummy minima praesentium, dicta quae auctor accusantium!</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- news swiper -->
+
+      <div class="swiper">
+      
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide news_slide">
+
+           <a href="https://yandex.ru" target="_blank">
+            <div class="news_item">
+              <div class="news_item_photo">
+                <img src="img/blog-12_450x450_crop_center.jpg" alt="#">
+              </div>
+              <div class="news_item_content">
+                <span class="date">01 June 2022</span>
+                <p>Curabitur sed metus felis. <br> Donec enim est, cursus eu</p>
+              </div>
+            </div>
+           </a>
+           
+           <a href="https://yandex.ru"  target="_blank">
+            <div class="news_item">
+              <div class="news_item_photo">
+                <img src="img/blog-11_450x450_crop_center.jpg" alt="#">
+              </div>
+              <div class="news_item_content">
+                <span class="date">01 June 2022</span>
+                <p>Curabitur sed metus felis. <br> Donec enim est, cursus eu</p>
+              </div>
+            </div>
+           </a>
+           
+
+            <a href="https://yandex.ru"  target="_blank">
+              <div class="news_item">
+                <div class="news_item_photo">
+                  <img src="img/blog-10_450x450_crop_center.jpg" alt="#">
+                </div>
+                <div class="news_item_content">
+                  <span class="date">01 June 2022</span>
+                  <p>Curabitur sed metus felis. <br> Donec enim est, cursus eu</p>
+                </div>
+              </div>
+            </a>
+            
+
+          </div>
+
+
+          <div class="swiper-slide news_slide">
+
+            <a href="https://yandex.ru"  target="_blank">
+              <div class="news_item">
+                <div class="news_item_photo">
+                  <img src="img/blog-5_450x450_crop_center.jpg" alt="#">
+                </div>
+                <div class="news_item_content">
+                  <span class="date">01 June 2022</span>
+                  <p>Curabitur sed metus felis. <br> Donec enim est, cursus eu</p>
+                </div>
+              </div>
+  
+            </a>
+            
+            <a href="https://yandex.ru" target="_blank">
+              <div class="news_item">
+                <div class="news_item_photo">
+                  <img src="img/blog-9_450x450_crop_center.jpg" alt="#">
+                </div>
+                <div class="news_item_content">
+                  <span class="date">01 June 2022</span>
+                  <p>Curabitur sed metus felis. <br> Donec enim est, cursus eu</p>
+                </div>
+              </div>
+            </a>
+           
+
+            <a href="https://yandex.ru"  target="_blank">
+              <div class="news_item">
+                <div class="news_item_photo">
+                  <img src="img/blog-6_450x450_crop_center.jpg" alt="#">
+                </div>
+                <div class="news_item_content">
+                  <span class="date">01 June 2022</span>
+                  <p>Curabitur sed metus felis. <br> Donec enim est, cursus eu</p>
+                </div>
+              </div>
+            </a>
+           
+          </div>
+
+
+          <!-- <div class="swiper-slide">
+
+           
+
+          </div> -->
+        
+        </div>
+        
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+     
+
+    </section>
+
+
+
+    <section class="instagram">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="col-lg-12 d-flex justify-content-center insagram_title">
+           <a href="https://google.com" class="d-flex">
+            <i class="fa-brands fa-instagram" style="font-size: 45px; margin-right: 20px;"></i>
+            <h2 id = "insta_title_logo">Instagram</h2>
+           </a>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center dogs_instagram" style="margin: 0;">
+            <img src="img/img-11_1200x.jpg" alt="#" class="insta_photo_hover">
+            <img src="img/img-12_1200x.jpg" alt="#">
+            <img src="img/img-13_1200x.jpg" alt="#">
+            <img src="img/img-14_1200x (1).jpg" alt="#">
+            <img src="img/img-15_1200x.jpg" alt="#">
+            <img src="img/img-16_1200x.jpg" alt="#">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center yellow_line" style="background-color: #ffcf62; margin: 0;">
+            <p id="insta_title_logo1">Join our Community</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- footer -->
+
+    <footer class="footer">
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-between">
+
+          <div class="footer_logo footer_content">
+            <img src="img/logo-pet_200x.jpg" alt="#" style="margin-bottom:20px ;">
+            <p>A great about us block helps builds <br> trust between you and your <br>
+               customers. The more content you provide <br> about you and your <br>
+               example.</p>
+          </div>
+
+          <div class="footer_address footer_content">
+            <h5  style="font-weight:bold ;">Address:</h5>
+            <p>7895 Piermont Dr NE Albuquerque, NM 198866, <br>
+             United States of America</p>
+          </div>
+
+          <div class="footer_phone footer_content">
+            <h5  style="font-weight:bold ;">phone</h5>
+            <p><a href="tel:9623734441">9623734441</a></p>
+          </div>
+
+          <div class="footer_email footer_content">
+            <h5 style="font-weight:bold ;">Email:</h5>
+            <p>Example@email.com</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    </footer>
+
+  
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://kit.fontawesome.com/b0816d6182.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="swiper.js"></script>
+<script src="script.js"></script>
+</html>
