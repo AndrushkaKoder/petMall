@@ -764,5 +764,40 @@ left: 9px;
         align-items: center;
         
     }
+    .mobile_column{
+        width: 100%;
+        flex-direction: column !important;
+        align-items: center;
+    }
 
+    .navigation{
+        display: none;
+    }
+
+    .shopNow_img{
+        width: 100%;
+         margin: 30px 0;
+    }
+    .shopNow_text{
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .swiper{
+        height: 200px;
+    }
+   
+    #text1, #text2{
+        font-size: 15px;
+    }
+
+    .footer_mobile{
+        flex-direction: column;
+    }
+
+}
+
+.mobileWidth{
+    width: 100%;
+    margin: 30px 0;
 }
